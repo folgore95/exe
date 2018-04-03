@@ -17,12 +17,12 @@ struct NODO {
 // Funzione QuantiNonComuni con parametri
 int QuantiNonComuni(NODO *lista1, NODO *lista2, char *datascadenza[], int size)
 {
-  struct NODO *tmp = lista1;
+  struct NODO *tmp = lista1;  // NODO *tmp = lista1;
   int counter = 0;
   while(tmp != null){
-    struct NODO *tmp2 = lista2;
+    struct NODO *tmp2 = lista2;  // NODO *tmp2 = lista2;
     while(tmp2 != null){
-      if(tmp -> buono.codice == tmp2 -> buono.codice){       // Controllo in base al codice del buono
+      if(strcmp ( tmp -> buono.codice,tmp2 -> buono.codice )==0){  // Controllo in base al codice del buono
           if(calk(tmp -> buono.data, datascadenza, size)){
             counter++;
                                                          }
