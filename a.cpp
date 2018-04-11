@@ -39,7 +39,7 @@ bool calk(char *data, char *datascadenza,int size)
 {
   bool result = false;
   for(int i=0;i<size;i++){
-    if(data == datascadenza[i]){
+    if(strcmp(data,datascadenza[i])!=0){
       result = true;
                                }
                          }
