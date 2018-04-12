@@ -35,7 +35,7 @@ int QuantiNonComuni(NODO *lista1, NODO *lista2, char *datascadenza[], int size)
 }
 
 // Funzione calk
-bool calk(char *data, char *datascadenza,int size)
+bool calk(char *data, char *datascadenza[],int size)
 {
   bool result = false;
   for(int i=0;i<size;i++){
